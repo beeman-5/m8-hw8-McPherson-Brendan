@@ -36,17 +36,32 @@ header {
 }
 
 /* header link animations! */
-header a {
+header a{ 
   font-size: 1.5rem;
   color: var(--off-white);
+}
+
+header a:hover{
+  transform: scale(1.5);
+  -webkit-text-stroke: 2px transparent;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: yellow;
+
 }
 /* end header link animations */
 
 /* article link transitions */
-main a {
+main a:hover{
+  font-size: 2rem;
+  color: peru
+  
+  
+  
+
   color: var(--danger-color);
 }
 /* end article link transitions */
+
 
 main > article, nav{
   max-width: 1200px;
@@ -100,6 +115,13 @@ section.hero > button {
   border-radius: 12px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+section.hero > button:hover {
+  background-color: var(--danger-color);
+  padding: 30px 30px;
+  cursor: pointer;
+  transition: transform 500ms;
 }
 
 main article {
